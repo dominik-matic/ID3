@@ -31,18 +31,6 @@ ID3::Node* ID3::id3(std::vector<unsigned>& D, std::vector<unsigned>& DParent, st
 	return ret;
 }
 
-/*void ID3::printD(std::vector<unsigned>& D) {
-	std::cout << "######################################\n";
-
-	for(auto ind : D) {
-		for(auto kurac : trainingData[ind]) {
-			std::cout << kurac << " ";
-		}
-		std::cout << "\n";
-	}
-	std::cout << "######################################\n";
-}*/
-
 void ID3::fit() {
 	mostLikely = "";
 	std::vector<unsigned> D;
